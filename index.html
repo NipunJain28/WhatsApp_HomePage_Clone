@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       /* .adding_blur{
+        backdrop-filter: blur(4px);
+        transition: background-color .3s cubic-bezier(.42, .00, .58, 1.00)
+       } */
+       .btn::before{
+        content: '';
+        top:0;
+        left:0;
+        
+        right:0;
+        bottom:0;
+        background-color: black;
+        position: absolute;
+       border-radius:9999px;
+       z-index:-1;
+       transform: scaleY(0);
+        transition-property: all;
+        transform-origin: bottom;
+        transition-duration: 2s;
+        transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+        
+      }
+      .btn:hover::before{
+        transform:scaleY(1);
+      } 
+     
+    </style>
+</head>
+<body>
+    <!--nav section-->
+    <div class="overflow-x-hidden overscroll-y-auto h-screen">
+    <nav class="bg-orange-50 sticky z-20  top-0 w-full  backdrop-blur-sm  bg-opacity-80 border-b border-gray-200">
+        <div class="w-11/12 mx-auto  relative max-w-[1500px]  flex justify-between py-4 items-baseline">
+            <div class="flex">
+                <img src="DSxOAUB0raA.png" alt="logo" class="w-[130px] relative top-2">
+            </div>
+           
+            <ul class=" font-custom flex justify-between gap-8 ">
+                <li class="relative group font-custom h-6"><a href="#">Features</a>
+                    <div class="w-full absolute bottom-0 h-0.5 transition-all duration-1000 origin-left scale-x-0 group-hover:scale-x-100 bg-green-500"></div>
+                </li>
+                <li class="relative group h-6"><a href="#">Privacy</a>
+                    <div class="w-full absolute bottom-0 h-0.5 transition-all duration-1000 origin-left scale-x-0 group-hover:scale-x-100 bg-green-500"></div>
+                </li>
+                <li class="relative group h-6"><a href="#">Help Center</a>
+                    <div class="w-full absolute bottom-0 h-0.5 transition-all duration-1000 origin-left scale-x-0 group-hover:scale-x-100 bg-green-500"></div>
+                </li>
+                <li class="relative group h-6"><a href="#">Blog</a>
+                    <div class="w-full absolute bottom-0 h-0.5 transition-all duration-1000 origin-left scale-x-0 group-hover:scale-x-100 bg-green-500"></div>
+                </li>
+            </ul>
+            <!--for button-->
+            <div class="flex relative justify-between items-baseline gap-5">
+                <!--web-->
+                <div class="group relative">
+                    WhatsApp Web
+                    <!--for hover-->
+                    <div class="w-full absolute bottom-0   h-0.5 transition-all duration-1000 origin-left scale-x-0 group-hover:scale-x-100 bg-green-500"></div>
+                
+                </div>
+                <button class="relative bg-green-500 group z-0 rounded-full h-[50px] btn border-black  border font-custom w-[150px]">
+                  Download <i class="fa fa-download"></i>
+  
+                </button>
+
+            </div>
+        </div>
+    </nav>
+    <!--section 1-->
+    <section class="bg-orange-50 relative  h-[820px]">
+        <!--width ka game-->
+        <div class="w-11/12 mx-auto py-16  relative max-w-[1500px]  rounded-lg h-[700px]   flex justify-center gap-52  ">
+            <img src="./SECTION1BG.png" alt="" class="absolute w-full object-cover   rounded-xl">
+            <!--left-->
+            <div class="flex flex-col gap-4 font-custom text-white z-10  justify-center items-start h-full">
+                <h1 class="max-w-[300px] text-7xl">Message Privately</h1>
+                <p class="max-w-[300px] text-lg">
+                    Simple, reliable, private messaging and calling for free*, available all over the world.
+                </p>
+                <button class="relative bg-green-500 group  rounded-full h-[50px] text-black font-custom w-[150px]">
+                    Download <i class="fa fa-download"></i>
+    
+                  </button>
+            </div>
+            <!--right-->
+            <div class="relative h-full w-[50%] ">
+                    <img src="328773053_721172359540563_5545409654111395580_n.png" alt="" loading="lazy" class="relative transition-all top-9 left-40 image1_anime">
+                    <img src="GOOD_MORNING.png" alt="" width="350px" class="absolute top-16 left-44 image1_anime">
+                    <img src="CUPS.png" alt="" class="relative left-16 top-16">
+                    <img src="AUDIO.png" alt="" class="relative top-[100px] left-40">
+                    <img src="IMG1.png" alt="" class="relative top-[100px] left-40">
+                    <img src="EMOJI.png" alt="" class="absolute top-[560px] left-40">
+                    <img src="CHAT.png" alt="" class="relative left-16 top-[150px] w-[450px]">
+            </div>
+
+        </div>
+        <h6 class="absolute bottom-0 text-grey text-sm right-16">* Data charges may apply. Contact your provider for details.
+
+        </h6>
+    </section>
+    <!--section 2-->
+    <section class="bg-orange-50 -my-16">
+        <!--width ka game-->
+        <div class="w-11/12 max-w-[1500px] py-24 mx-auto flex flex-col justify-center gap-10">
+            <!--top images-->
+            <div class="w-full">
+                <img src="section2_1.png" alt="">
+            </div>
+            <!--content-->
+            <div class="text-black font-custom mx-auto max-w-[750px]  text-center text-4xl font-medium">
+                With private messaging and calling, you can be yourself, speak freely and feel close to the most important people in your life no matter where they are.
+            </div>
+            <!--right images-->
+            <div>
+                <img src="section2_part2.png" alt="">
+            </div>
+        </div>
+    </section>
+    <!--section 3-->
+    <section class="bg-orange-50">
+        <!--width valli game-->
+        <div class="w-11/12 max-w-[1500px] mx-auto flex justify-around py-24 ">
+            <!--left-->
+            <div class="flex flex-col justify-center gap-3">
+                <h1 class="font-custom text-6xl max-w-[450px]">Never miss a moment with voice and video calls</h1>
+                <p class="text-grey font-custom max-w-[470px] text-xl">From a group call to classmates to a quick call with mom, feel like you’re in the same room with voice and video calls.</p>
+                <div class="relative w-[200px]">
+                    <div class="relative flex flex-col justify-center gap-1 ">
+                        <a href="#">Learn More</a>
+                        <div class="w-[80px] bg-green-400 h-0.5"></div>
+                    </div>
+                    <div>
+                        <!--icon-->
+                    </div>
+                </div>
+            </div>
+            <!--right-->
+            <img src="section3.png" alt="" >
+        </div>
+    </section>
+    <!--section 4-->
+    <section class="bg-black">
+        <!--width valli game-->
+        <div class="w-11/12 max-w-[1500px] flex justify-around mx-auto py-24">
+            <!--left-->
+            <img src="section4.png" alt="">
+            <!--right-->
+            <div class="text-white font-custom flex flex-col justify-center gap-3">
+                <h1 class="font-custom text-6xl max-w-[250px]">Speak <span class="text-green-500">Freely</span></h1>
+                <p class="text-white font-custom max-w-[470px] text-xl">With end-to-end encryption, your personal messages and calls are secured. Only you and the person you're talking to can read or listen to them, and nobody in between, not even WhatsApp.</p>
+                <div class="relative w-[200px]">
+                    <div class="relative flex flex-col justify-center gap-1 ">
+                        <a href="#">Learn More</a>
+                        <div class="w-[80px] bg-green-400 h-0.5"></div>
+                    </div>
+                    <div>
+                        <!--icon-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--section 5-->
+    <section class="bg-orange-50">
+        <div class="w-11/12 mx-auto max-w-[1500px] flex justify-around py-24">
+            <!--left-->
+            <div class="relative flex flex-col gap-3 justify-center">
+                <h1 class="font-custom  text-black text-6xl max-w-[500px]">Keep in touch With Your Groups</h1>
+                <p class="text-grey font-custom max-w-[500px] text-xl">Whether it's planning an outing with friends or simply staying on top of your family chats, group conversations should feel effortless.</p>
+                <div class="relative w-[200px]">
+                    <div class="relative flex flex-col justify-center gap-1 ">
+                        <a href="#">Learn More</a>
+                        <div class="w-[80px] bg-green-400 h-0.5"></div>
+                    </div>
+                    <div>
+                        <!--icon-->
+                    </div>
+                </div>
+            </div>
+            <!--right-->
+           <div class="relative">
+            <img src="318716844_644367477472796_6799212725643495984_n.png" alt="" class="relative">
+           <img src="section_5.png" alt="" class="absolute bottom-28 right-4">
+           </div>
+               
+            
+            
+        </div>
+    </section>
+    <!--section 6-->
+    <section class="bg-orange-50">
+        <!--width valla game-->
+        <div class="relative mx-auto max-w-[1500px] w-11/12 flex justify-evenly">
+        <!--left-->
+        <div class="relative">
+            <img src="6.1.png" alt="" >
+            <img src="section6.png" alt="" class="absolute bottom-36">
+        </div>
+        <!--right-->
+        <div class="flex relative flex-col gap-3 justify-center">
+            <h1 class="font-custom text-6xl text-black max-w-[300px]">Say What You Feel</h1>
+            <p class="text-grey font-custom max-w-[500px] text-xl">Express yourself without words. Use stickers and GIFs or share everyday moments on Status. Record a voice message for a quick hello or a longer story.</p>
+            <div class="relative w-[200px]">
+                <div class="relative flex flex-col justify-center gap-1 ">
+                    <a href="#">Learn More</a>
+                    <div class="w-[80px] bg-green-400 h-0.5"></div>
+                </div>
+                <div>
+                    <!--icon-->
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--section 7-->
+    <section class="bg-orange-50">
+        <!--width ka game-->
+        <div class="max-w-[1500px] w-11/12 flex mx-auto justify-evenly items-center py-16">
+            <!--left-->
+            <div class="flex flex-col gap-6">
+                <h1 class="text-black text-6xl max-w-[380px]">Transform
+                    your business</h1>
+                    <p class="text-grey font-custom max-w-[500px] text-xl">
+                        WhatsApp Business helps you reach your customers globally to deliver compelling experiences at scale. Showcase your products and services, increase sales, and build relationships all with WhatsApp.
+                    </p>
+                    <div class="relative w-[200px]">
+                        <div class="relative flex flex-col gap-1 ">
+                            <a href="#">Learn More</a>
+                            <div class="w-[80px] bg-green-400 h-0.5"></div>
+                        </div>
+                        <div>
+                            <!--icon-->
+                        </div>
+                    </div>
+            </div>
+            <!--right-->
+            <img src="section_7.png" alt="">
+        </div>
+    </section>
+    <!--section 8-->
+    <section class="bg-green-100    rounded-b-[100px]">
+        <!--width valla-->
+        <div class="w-11/12 max-w-[1500px] z-100 flex mx-auto py-16 justify-around">
+            <!--left-->
+            <div class="flex flex-col justify-between  gap-96">
+                <h1 class="font-custom text-6xl w-[500px]">Connect With Us.</h1>
+                <!--button rounded-->
+                <div class="flex gap-4">
+                    <div class="rounded-full border w-12 h-12 flex justify-center items-center border-black">
+                        >
+                    </div>
+                    <div class="rounded-full border w-12 h-12 flex justify-center items-center border-black">
+                        >
+                    </div>
+                </div>
+            </div>
+            <!--right valla-->
+            <div class="flex justify-center gap-8  min-w-[800px] relative overflow-x-visible left-44">
+                <!--card1-->
+                <div class="bg-white flex flex-col justify-center items-start gap-4 rounded-md w-[700px] h-[430px] px-8 ">
+                    <img src="whatsapp-logo-icon-social-media-symbol-vector-26504752.jpg" alt="" class="rounded-full" width="40px">
+                    <h1 class="text-3xl font-custom">New Ways To Enjoy
+                    WhatsApp Status</h1>
+                        <p class="font-custom">Status is a popular way to share ephemeral updates with friends and close contacts on WhatsApp. They disappear in 24 hours and may include photos,...</p>
+                        <button class="w-[150px] h-[50px] rounded-full border hover:underline border-black">Read More</button>
+                    </div>
+                    <!--card 2-->
+                    <div class="bg-white flex flex-col justify-center items-start gap-4 rounded-md w-[700px] h-[430px] px-8 ">
+                        <img src="whatsapp-logo-icon-social-media-symbol-vector-26504752.jpg" alt="" class="rounded-full" width="40px">
+                        <h1 class="text-3xl font-custom">New Ways To Enjoy
+                        WhatsApp Status</h1>
+                            <p class="font-custom">Status is a popular way to share ephemeral updates with friends and close contacts on WhatsApp. They disappear in 24 hours and may include photos,...</p>
+                            <button class="w-[150px] h-[50px] rounded-full border hover:underline border-black">Read More</button>
+                        </div>
+            </div>
+        </div>
+
+    </section>
+    <footer class="bg-black -my-2  relative h-fit">
+        <!--width ka game-->
+        <div class="w-11/12 max-w-[1500px] flex flex-col justify-center z-100 py-16 gap-7 mx-auto">
+            
+            <div class="flex flex-row w-full py-16 my-6 justify-evenly">
+                <!--first-->
+            <div class="flex flex-col justify-between ">
+                <img src="Footer_logo.png" alt="">
+                <button class="relative bg-green-500 group z-50 rounded-full h-[50px] btn border-black border font-custom w-[150px]">
+                    Download <i class="fa fa-download"></i>
+    
+                  </button>
+            </div>
+            <!--second-->
+            <div class="text-white font-custom flex flex-col   justify-evenly gap-9">
+                <h6 class="text-sm">What We Do</h6>
+                <ul class="flex flex-col leading-10 text-lg">
+
+                    <li >
+                        <a href="#" class="hover:underline">Features</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Stories</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">For Business</a>
+                    </li>
+                </ul>
+            </div>
+            <!--third-->
+            <div class="text-white font-custom flex flex-col  justify-evenly gap-9">
+                <h6 class="text-sm">Who We Are</h6>
+                <ul class="flex flex-col leading-10 text-lg">
+                    <li>
+                        <a href="#" class="hover:underline">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Brand Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+            <!--four-->
+            <div class="text-white font-custom flex flex-col  justify-evenly gap-9">
+                <h6 class="text-sm">Use WhatsApp</h6>
+                <ul class="flex flex-col leading-10 text-lg">
+                    <li>
+                        <a href="#" class="hover:underline">Iphone</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Android</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Mac/Ipad</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">WhatsApp Web</a>
+                    </li>
+                </ul>
+            </div>
+            <!--five-->
+            <div class="text-white font-custom flex flex-col  justify-evenly gap-9">
+                <h6 class="text-sm">Need Help?</h6>
+                <ul class="flex flex-col leading-10 text-lg">
+                    <li>
+                        <a href="#" class="hover:underline">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Help Center</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Coronavirus</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Security Advisoried</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--line-->
+        <div class="w-[1200px] mx-auto bg-green-400 h-[0.5px] ">
+            
+        </div>
+        <!--next section-->
+        <div class="text-white font-custom flex justify-between h-[20px] items-center mx-auto w-[1200px] py-3">
+            <!--first-->
+            <div class="flex justify-center gap-5">
+                <div class="text-sm">
+                    2023 © WhatsApp LLC
+                </div>
+                <div class="text-sm">
+                    <a href="#" class="text-sm">Terms Of Service</a>
+                </div>
+                
+            </div>
+            <!--second-->
+            <div class="flex justify-between gap-4">
+                <div class="border rounded-full border-white w-12 h-12 flex justify-center items-center">
+                    <i style="font-size:24px" class="fa">&#xf099;</i>
+                </div>
+                <div class="border rounded-full border-white flex  w-12 h-12 justify-center items-center">
+                    <i style="font-size:24px" class="fa">&#xf16d;</i>
+                </div>
+                <div class="border rounded-full border-white flex w-12 h-12 justify-center items-center">
+                    <i style="font-size:24px" class="fa">&#xf09a;</i>
+                </div>
+                <div class="border rounded-full border-white flex w-12 h-12 justify-center items-center">
+                    <i style="font-size:24px" class="fa">&#xf16a;</i>
+                </div>
+            </div>
+            <!--third-->
+            
+                <select class="bg-black z-1000 border rounded-full w-44 text-2xl ">
+                    <option value="english" class="text-white z-10000">English</option>
+                    <option value="hindi" class="text-white z-10000">Hindi</option>
+                </select>
+            
+        </div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
